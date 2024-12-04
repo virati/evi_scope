@@ -9,7 +9,8 @@
 	//"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
 	"mounts": [
 		"source=/home/virati/Data/,target=/home/data,type=bind"
-	]
+	],
+	"forwardPorts": [8888]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
