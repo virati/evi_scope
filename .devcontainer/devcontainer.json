@@ -8,9 +8,18 @@
 	},
 	//"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
 	"mounts": [
-		"source=/home/virati/Data/,target=/home/data,type=bind"
+		"source=/home/virati/Data/steno_2024,target=/home/data,type=bind"
 	],
-	"forwardPorts": [8888]
+	"forwardPorts": [
+		8888
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
