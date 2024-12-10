@@ -16,10 +16,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"ms-azuretools.vscode-docker"
 			]
 		}
-	}
+	},
+	"runArgs": ["--device=/dev/snd"],
+	"postCreateCommand": "./scripts/setup_debian_devcontainer.sh"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
